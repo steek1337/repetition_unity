@@ -1,19 +1,19 @@
 switch(operator)
 {
     case '+':
-    printf("%.1lf + %.1lf = %.1lf",firstNumber, secondNumber, firstNumber+secondNumber);
+    printf("%lf + %lf = %lf",firstNumber, secondNumber, firstNumber+secondNumber);
     break;
 
     case '-':
-    printf("%.1lf - %.1lf = %.1lf",firstNumber, secondNumber, firstNumber-secondNumber);
+    printf("%lf - %lf = %lf",firstNumber, secondNumber, firstNumber-secondNumber);
     break;
 
     case '*':
-    printf("%.1lf * %.1lf = %.1lf",firstNumber, secondNumber, firstNumber*secondNumber);
+    printf("%lf * %lf = %lf",firstNumber, secondNumber, firstNumber*secondNumber);
     break;
 
     case '/':
-    printf("%.1lf / %.1lf = %.1lf",firstNumber, secondNumber, firstNumber/firstNumber);
+    printf("%lf / %lf = %lf",firstNumber, secondNumber, firstNumber/firstNumber);
     break;
 
     // operator is doesn't match any case constant (+, -, *, /)
