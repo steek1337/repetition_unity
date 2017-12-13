@@ -1,7 +1,8 @@
 // Program to create a simple calculator
 // Performs addition, subtraction, multiplication or division depending the input from user
 
-# include <stdio.h>
+#include <stdio.h>
+#include "Repo.h"
 
 int main() {
 
@@ -14,28 +15,7 @@ int main() {
     printf("Enter two operands: ");
     scanf("%lf %lf",&firstNumber, &secondNumber);
 
-    switch(operator)
-    {
-        case '+':
-            printf("%.1lf + %.1lf = %.1lf",firstNumber, secondNumber, firstNumber+secondNumber);
-            break;
-
-        case '-':
-            printf("%.1lf - %.1lf = %.1lf",firstNumber, secondNumber, firstNumber-secondNumber);
-            break;
-
-        case '*':
-            printf("%.1lf * %.1lf = %.1lf",firstNumber, secondNumber, firstNumber*secondNumber);
-            break;
-
-        case '/':
-            printf("%.1lf / %.1lf = %.1lf",firstNumber, secondNumber, firstNumber/firstNumber);
-            break;
-
-        // operator is doesn't match any case constant (+, -, *, /)
-        default:
-            printf("Error! operator is not correct");
-    }
+    switch(operator);
 
     return 0;
 }
