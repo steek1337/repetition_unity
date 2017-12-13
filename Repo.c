@@ -3,19 +3,13 @@
 
 #include <stdio.h>
 #include "Repo.h"
+#include 
 
 int main() {
 
-    char operator;
-    double firstNumber,secondNumber;
+    double value1();
 
-    printf("Enter an operator (+, -, *, /): ");
-    scanf("%c", &operator);
-
-    printf("Enter two operands: ");
-    scanf("%lf %lf",&firstNumber, &secondNumber);
-
-    switch(operator);
+    calc();
 
     return 0;
 }

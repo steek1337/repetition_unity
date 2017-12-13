@@ -1,2 +1,2 @@
-
-switch(operator);
+double calc();
+double value1();

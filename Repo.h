@@ -1,22 +1,40 @@
-switch(operator)
+#include <stdio.h>
+double firstNumber,secondNumber;
+
+double value1()
 {
-    case '+':
-    printf("%lf + %lf = %lf",firstNumber, secondNumber, firstNumber+secondNumber);
-    break;
+    char operator;
+    printf("Enter an operator (+, -, *, /): ");
+    scanf("%c", &operator);
 
-    case '-':
-    printf("%lf - %lf = %lf",firstNumber, secondNumber, firstNumber-secondNumber);
-    break;
+    double firstNumber,secondNumber;
+    printf("Enter two operands: ");
+    scanf("%lf %lf",&firstNumber, &secondNumber);
+}
 
-    case '*':
-    printf("%lf * %lf = %lf",firstNumber, secondNumber, firstNumber*secondNumber);
-    break;
+double calc()
+{
+    char operator;
+    switch(operator)
+    {
+        case '+':
+        printf("%lf + %lf = %lf",firstNumber, secondNumber, firstNumber+secondNumber);
+        break;
 
-    case '/':
-    printf("%lf / %lf = %lf",firstNumber, secondNumber, firstNumber/firstNumber);
-    break;
+        case '-':
+        printf("%lf - %lf = %lf",firstNumber, secondNumber, firstNumber-secondNumber);
+        break;
 
-    // operator is doesn't match any case constant (+, -, *, /)
-    default:
-    printf("Error! operator is not correct");
+        case '*':
+        printf("%lf * %lf = %lf",firstNumber, secondNumber, firstNumber*secondNumber);
+        break;
+
+        case '/':
+        printf("%lf / %lf = %lf",firstNumber, secondNumber, firstNumber/firstNumber);
+        break;
+
+        // operator is doesn't match any case constant (+, -, *, /)
+        default:
+        printf("Error! operator is not correct");
+    }
 }
